@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="144dp"
+    android:paddingLeft="12dp"
+    android:layout_margin="8dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/card_view_item"
+        android:layout_toStartOf="@id/card_view_item"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#272727"
+        android:textSize="20sp"
+        tools:text="1.Title" />
+
+    <TextView
+        android:id="@+id/text_view_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text_view_title"
+        android:layout_marginTop="8dp"
+        android:layout_toStartOf="@id/card_view_item"
+        android:textSize="14sp"
+        tools:text="2.and the rating will be below asdkjfnksdjnv sdjvn ds  sjdkjs djkjsdskdjnsd" />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/card_view_item"
+        tools:rating="3.5f" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_item"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        app:cardCornerRadius="20dp"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/image_view_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/image_to_go"
+
+
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
